@@ -20,12 +20,12 @@ PrintArray(array);
 
 void FillArray(float[,] array)
 {
- Random rnd = new Random();
+    Random rnd = new Random();
     for (int i = 0; i < rows; i++)
     {
         for (int k = 0; k < columns; k++)
         {
-            array[i, k] = rnd.Next();
+            array[i, k] = rnd.Next(-100, 100);
         }
     }
 }
@@ -36,7 +36,7 @@ void PrintArray(float[,] input)
     {
         for (int k = 0; k < input.GetLength(1); k++)
         {
-            Console.Write(input[i, k] + " ");
+            Console.Write(String.Format("{0,5}", input[i, k]));
         }
         Console.WriteLine();
     }

@@ -48,7 +48,7 @@ void PrintArray(int[,] input)
     {
         for (int k = 0; k < input.GetLength(1); k++)
         {
-            Console.Write(input[i, k] + " ");
+            Console.Write(String.Format("{0,5}", input[i, k]));
         }
         Console.WriteLine();
     }

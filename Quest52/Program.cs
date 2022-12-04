@@ -39,7 +39,7 @@ void PrintArray(int[,] input)
     {
         for (int k = 0; k < input.GetLength(1); k++)
         {
-            Console.Write(input[i, k] + " ");
+            Console.Write(String.Format("{0,5}", input[i, k]));
         }
         Console.WriteLine();
     }
@@ -61,7 +61,7 @@ void AverageColumns(int[,] array) // Это я делал больше 4 час�
             }
              average = sum / rows;
              secondArray[k] = average;
-             Console.WriteLine($"Среднее арифметическое столбца {k} = {secondArray[k]}");
+             Console.WriteLine($"Среднее арифметическое столбца {k+1} = {secondArray[k]}");
              k++;
         } 
     }
