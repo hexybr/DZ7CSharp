@@ -44,7 +44,8 @@ void PrintArray(int[,] input)
         Console.WriteLine();
     }
 }
-void AverageColumns(int[,] array)
+void AverageColumns(int[,] array) // Это я делал больше 4 часов....
+                                  // Функция расчета среднего арифметического каждого столбца
 {
     float[] secondArray = new float[columns];
 
